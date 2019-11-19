@@ -41,6 +41,7 @@ public class SyncThread extends Thread{
         Thread t5 = new Thread(myThread,"t5");
 
         t1.start();
+
         t2.start();
         t3.start();
         t4.start();
