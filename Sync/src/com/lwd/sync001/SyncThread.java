@@ -5,7 +5,6 @@ public class SyncThread extends Thread{
      *  成员变量
      */
     private int count = 5;
-
     /**
      *  多线程对同一个任务对象操作的时候
      *   count--  非原子性操作  count -- 操作  是先读 在写   多线程操作的时候  每个线程会读取当前成员变量count的5 拷贝到各自的工作空间
@@ -41,7 +40,7 @@ public class SyncThread extends Thread{
         Thread t5 = new Thread(myThread,"t5");
 
         t1.start();
-
+        System.out.println("d");
         t2.start();
         t3.start();
         t4.start();
