@@ -1,5 +1,7 @@
 package com.lwd.sync001;
 
+import com.sun.xml.internal.bind.v2.runtime.output.StAXExStreamWriterOutput;
+
 public class SyncThread extends Thread{
     /**
      *  成员变量dddd
@@ -24,9 +26,11 @@ public class SyncThread extends Thread{
 
         //执行--操作
         count--;
+        System.out.println("");
 
         System.out.println(Thread.currentThread().getName()+"--------"+count);
     }
+
 
 
     public static void main(String[] args) {
