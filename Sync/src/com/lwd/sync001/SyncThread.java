@@ -2,7 +2,7 @@ package com.lwd.sync001;
 
 public class SyncThread extends Thread{
     /**
-     *  成员变量
+     *  成员变量dddd
      */
     private int count = 5;
     /**
